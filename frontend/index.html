@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostFlow</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        body {
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center font-extrabold text-6xl text-shadow">PostFlow</h1>
+        
+        <!-- Post Form -->
+        <div class="mb-4">
+            <h2>Create a Post</h2>
+            <form id="postForm">
+                <div class="form-group">
+                    <textarea class="form-control" id="postContent" rows="3" placeholder="What's on your mind?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Post</button>
+            </form>
+        </div>
+
+        <!-- Posts List -->
+        <div id="postsList">
+            <h2>Posts</h2>
+            <!-- Posts will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
